@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 6aa56dc22e449164899a4e2720d8dd6c
+guid: a738e94a28b387e4996b7eb37e0821e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8779670770447917091
-    second: Capture_decran_2025-03-26_142318_0
+      213: 3662712558893797098
+    second: fairy_wings_0
+  - first:
+      213: 1443763738633696949
+    second: fairy_wings_1
+  - first:
+      213: 3350826469918886911
+    second: fairy_wings_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,12 +78,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Capture_decran_2025-03-26_142318_0
+      name: fairy_wings_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 528
-        height: 539
+        y: 79
+        width: 2048
+        height: 1969
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 320ad6d8c08a7d970800000000000000
-      internalID: 8779670770447917091
+      spriteID: aee0a3b9aa194d230800000000000000
+      internalID: 3662712558893797098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_wings_1
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 56
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b6f9dc8877490410800000000000000
+      internalID: 1443763738633696949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fairy_wings_2
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 56
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffbcd73cbe6808e20800000000000000
+      internalID: 3350826469918886911
       vertices: []
       indices: 
       edges: []
@@ -134,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Capture_decran_2025-03-26_142318_0: 8779670770447917091
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

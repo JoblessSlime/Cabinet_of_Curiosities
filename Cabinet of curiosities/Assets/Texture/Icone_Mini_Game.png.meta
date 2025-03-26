@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 3bb1df5e444839741ad09358eaf2706b
+guid: 71adf9c5d083d844cba9eff3f9f105ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 841874230217585786
-    second: Capture_decran_2025-03-26_142251_0
+      213: 642703902268782060
+    second: Icone_Mini_Game_0
+  - first:
+      213: 4029220936971838107
+    second: Icone_Mini_Game_1
+  - first:
+      213: -1153533682681383792
+    second: Icone_Mini_Game_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Capture_decran_2025-03-26_142251_0
+      name: Icone_Mini_Game_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 504
-        height: 601
+        x: 845
+        y: 1168
+        width: 167
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a74bca5e620feab00800000000000000
-      internalID: 841874230217585786
+      spriteID: ce5fc7e3bc75be800800000000000000
+      internalID: 642703902268782060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icone_Mini_Game_1
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1027
+        width: 291
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92e5cd281baae730800000000000000
+      internalID: 4029220936971838107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Icone_Mini_Game_2
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 914
+        width: 244
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094f35f2a33ddffe0800000000000000
+      internalID: -1153533682681383792
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Capture_decran_2025-03-26_142251_0: 841874230217585786
+      Icone_Mini_Game_0: 642703902268782060
+      Icone_Mini_Game_1: 4029220936971838107
+      Icone_Mini_Game_2: -1153533682681383792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
