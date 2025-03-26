@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class CollectibleItem : MonoBehaviour
 {
+    public string itemTag;
+
     private void OnMouseDown()
     {
         CollectionManager manager = FindObjectOfType<CollectionManager>();
@@ -15,5 +17,7 @@ public class CollectibleItem : MonoBehaviour
         {
             Debug.LogError("CollectionManager not found in the scene!");
         }
+
     }
+    
 }

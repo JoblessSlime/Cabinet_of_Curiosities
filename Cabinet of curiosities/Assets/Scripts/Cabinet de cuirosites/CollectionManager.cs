@@ -18,10 +18,11 @@ public class CollectionManager : MonoBehaviour
     {
         public string curiosityName;
         public GameObject slotUI;
+        public TextMeshProUGUI itemCountText;  // Text component to display the item count
     }
     
     public List<CuriositySlot> curiositySlots = new List<CuriositySlot>();
-    private Dictionary<string, GameObject> curiositySlotMap = new Dictionary<string, GameObject>();
+    private Dictionary<string, CuriositySlot> curiositySlotMap = new Dictionary<string, CuriositySlot>();
     
     private int totalCollectibles;
 
@@ -35,8 +36,12 @@ public class CollectionManager : MonoBehaviour
         // Convert list to dictionary for faster access
         foreach (var slot in curiositySlots)
         {
-            curiositySlotMap[slot.curiosityName] = slot.slotUI;
+            curiositySlotMap[slot.curiosityName] = slot;
             slot.slotUI.SetActive(false); // Hide all slots initially
+            if (slot.itemCountText != null)
+            {
+                slot.itemCountText.text = "0";  // Initialize item count text to "0"
+            }
         }
         
         // Assign button function
@@ -65,7 +70,8 @@ public class CollectionManager : MonoBehaviour
             
             if (curiositySlotMap.ContainsKey(itemName))
             {
-                curiositySlotMap[itemName].SetActive(true);
+                curiositySlotMap[itemName].slotUI.SetActive(true);  // Activate the UI slot for this item
+                UpdateItemCountText(itemName);  // Update the item count
                 Debug.Log($"Activated UI slot for {itemName}.");
             }
             else
@@ -76,12 +82,26 @@ public class CollectionManager : MonoBehaviour
         else
         {
             Debug.Log($"{itemName} was already in the collection book.");
+            UpdateItemCountText(itemName);  // Update the item count if it's already in the book
         }
 
         if (collectionBook.Count >= totalCollectibles)
         {
             completionMessage.gameObject.SetActive(true);
             completionMessage.text = "Collection Book Completed!";
+        }
+    }
+
+    // Update the item count text when an item is collected
+    private void UpdateItemCountText(string itemName)
+    {
+        if (curiositySlotMap.ContainsKey(itemName))
+        {
+            CuriositySlot slot = curiositySlotMap[itemName];
+            if (slot.itemCountText != null)
+            {
+                slot.itemCountText.text = inventory[itemName].ToString();  // Update the text with the current count
+            }
         }
     }
 
