@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0fa6ad38b64f486408bdf800deca7801
+guid: 5bf01103981480444b2becf061920a44
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6715765255034984163
-    second: will_o_the_wisp_0
+      213: -3753825769889500098
+    second: sword_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: will_o_the_wisp_0
+      name: sword_0
       rect:
         serializedVersion: 2
-        x: 312
-        y: 42
-        width: 1386
-        height: 1949
+        x: 180
+        y: 453
+        width: 1667
+        height: 1093
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e65545fae0333d50800000000000000
-      internalID: 6715765255034984163
+      spriteID: e347705d95bb7ebc0800000000000000
+      internalID: -3753825769889500098
       vertices: []
       indices: 
       edges: []

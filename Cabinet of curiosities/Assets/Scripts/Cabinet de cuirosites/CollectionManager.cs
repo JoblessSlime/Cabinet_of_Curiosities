@@ -29,7 +29,6 @@ public class CollectionManager : MonoBehaviour
     void Start()
     {
         totalCollectibles = FindObjectsOfType<CollectibleItem>().Length;
-        completionMessage.gameObject.SetActive(false);
         openBookUI.SetActive(false);
         closedBookUI.SetActive(true);
         
@@ -81,7 +80,6 @@ public class CollectionManager : MonoBehaviour
         }
         else
         {
-            Debug.Log($"{itemName} was already in the collection book.");
             UpdateItemCountText(itemName);  // Update the item count if it's already in the book
         }
 
