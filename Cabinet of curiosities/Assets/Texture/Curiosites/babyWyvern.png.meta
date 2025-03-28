@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b42d7b168f1c69c4f9274d1c68f685b9
+guid: 5f45dd48552afd1449cac93879bf0611
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9154004630633920811
-    second: backgroundFront_0
+      213: 686544383987655152
+    second: babyWyvern_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: backgroundFront_0
+      name: babyWyvern_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 219
+        y: 76
+        width: 1749
+        height: 1847
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d6c8c6d94176f080800000000000000
-      internalID: -9154004630633920811
+      spriteID: 0f1af12da78178900800000000000000
+      internalID: 686544383987655152
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      backgroundFront_0: -9154004630633920811
+      babyWyvern_0: 686544383987655152
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

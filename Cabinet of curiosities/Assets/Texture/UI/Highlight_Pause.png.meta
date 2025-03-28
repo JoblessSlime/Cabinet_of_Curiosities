@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a88d01b077a371c4f8e6575a83ae4d99
+guid: 3870183e987aba94faf92a7ef1e6e336
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4361083733572515901
-    second: background_desk2_0
+      213: -4093196519407743529
+    second: Highlight_Pause_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_desk2_0
+      name: Highlight_Pause_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 827
+        y: 425
+        width: 299
+        height: 302
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d38f257bc8ea58c30800000000000000
-      internalID: 4361083733572515901
+      spriteID: 7dd06d8c37b0237c0800000000000000
+      internalID: -4093196519407743529
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background_desk2_0: 4361083733572515901
+      Highlight_Pause_0: -4093196519407743529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
