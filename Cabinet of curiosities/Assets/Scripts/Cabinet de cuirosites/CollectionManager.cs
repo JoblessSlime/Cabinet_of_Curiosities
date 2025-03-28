@@ -86,7 +86,7 @@ public class CollectionManager : MonoBehaviour
         if (collectionBook.Count >= totalCollectibles)
         {
             completionMessage.gameObject.SetActive(true);
-            completionMessage.text = "Collection Book Completed!";
+            completionMessage.text = "";
         }
     }
 
