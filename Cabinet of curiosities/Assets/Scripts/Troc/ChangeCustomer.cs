@@ -58,6 +58,10 @@ public class ChangeCustomer : MonoBehaviour
         TMP_BoxName.text = new_Customer.GetComponent<Customer>().name;
 
         gameObject_CustomerObject = new_Customer.GetComponent<Customer>().list_objectsToBuy[Random.Range(0, new_Customer.GetComponent<Customer>().list_objectsToBuy.Count)];
+        if(gameObject_ObjectToBuyParent.transform.childCount > 0)
+        {
+            Destroy(gameObject_ObjectToBuyParent.transform.GetChild(0).gameObject);
+        }
         gameObject_ObjectToBuy = Instantiate(gameObject_CustomerObject, gameObject_ObjectToBuyParent.transform);
 
         // sprite_ObjectToBuy = new_Customer.GetComponent<Customer>().objectToBuy.GetComponent<Sprite>();
@@ -68,30 +72,17 @@ public class ChangeCustomer : MonoBehaviour
         gameObject_activeCustomer.GetComponent<Animator>().SetBool("Bool_CustomerLeaving", true);
         list_CustomersInGame.Remove(gameObject_activeCustomer);
         numberOfCustomers += 1;
-        if(numberOfCustomers >= maxCustomers)
-        {
-            // Change Activity
-            ui_shop.SetActive(false);
-            UI_Troc.SetActive(false);
-            openCollection.SetActive(false);
-            shop.SetActive(false);
 
-
-            numberOfCustomers = 0;
-            return;
-        }
-        else
+        if(list_CustomersInGame.Count <= 0)
         {
-            if(list_CustomersInGame.Count <= 0)
+            Debug.Log("count < 0");
+            for (int i = 0; i < list_Customers.Count; i++)
             {
-                Debug.Log("count < 0");
-                for (int i = 0; i < list_Customers.Count; i++)
-                {
-                    list_CustomersInGame.Add(list_Customers[i]);
-                }
-                Debug.Log(list_CustomersInGame.Count);
+                list_CustomersInGame.Add(list_Customers[i]);
             }
+            Debug.Log(list_CustomersInGame.Count);
         }
+
 
         gameObject_activeCustomer = list_CustomersInGame[Random.Range(0, list_CustomersInGame.Count)];
         gameObject_activeCustomer.SetActive(true);
@@ -134,6 +125,10 @@ public class ChangeCustomer : MonoBehaviour
         openCollection.SetActive(true);
         UI_Troc.SetActive(true);
 
+        UI_Troc.transform.GetChild(0).gameObject.SetActive(false);
+        UI_Troc.transform.GetChild(1).gameObject.SetActive(false);
+        UI_Troc.transform.GetChild(2).gameObject.SetActive(false);
+
         // gameObject_CustomerObject.GetComponent<LayerMask>() == uncommon
 
         if ((uncommon & (1 << gameObject_CustomerObject.layer)) != 0)
@@ -165,6 +160,7 @@ public class ChangeCustomer : MonoBehaviour
             if (manager.inventory[itemName] >= 1)
             {
                 manager.inventory[itemName] -= 1;
+                manager.UpdateItemCountText(itemName);
                 paying += 1;
             }
         }

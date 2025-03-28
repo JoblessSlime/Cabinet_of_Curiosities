@@ -91,7 +91,7 @@ public class CollectionManager : MonoBehaviour
     }
 
     // Update the item count text when an item is collected
-    private void UpdateItemCountText(string itemName)
+    public void UpdateItemCountText(string itemName)
     {
         if (curiositySlotMap.ContainsKey(itemName))
         {

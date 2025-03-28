@@ -5,6 +5,7 @@ public class UIToggleManager : MonoBehaviour
     public GameObject canvasA;  // Assign the first canvas
     public GameObject canvasB;  // Assign the second canvas
     public GameObject extraObject; // Assign the extra GameObject to deactivate
+    public GameObject Bar; // Assign the extra GameObject to deactivate
 
     public void ToggleUI()
     {
@@ -14,6 +15,7 @@ public class UIToggleManager : MonoBehaviour
 
             // Toggle canvases
             canvasA.SetActive(!isCanvasAActive);
+            Bar.SetActive(isCanvasAActive);
             canvasB.SetActive(isCanvasAActive);
 
             // Deactivate the extra object when switching to Canvas B
