@@ -1869,56 +1869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9a5ab3d18250a409d8503d265ddf0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedBookUI: {fileID: 1667629003}
-  openBookUI: {fileID: 928571034}
-  completionMessage: {fileID: 1472425475}
-  closeButton: {fileID: 1613176475}
-  curiositySlots:
-  - curiosityName: willOTheWisp
-    slotUI: {fileID: 1756811173}
-    itemCountText: {fileID: 1967734795}
-  - curiosityName: boggart
-    slotUI: {fileID: 349171172}
-    itemCountText: {fileID: 928849302}
-  - curiosityName: fairyWings
-    slotUI: {fileID: 1408877430}
-    itemCountText: {fileID: 1881286846}
-  - curiosityName: LobHair
-    slotUI: {fileID: 2123085644}
-    itemCountText: {fileID: 1118096539}
-  - curiosityName: Pixies
-    slotUI: {fileID: 324408771}
-    itemCountText: {fileID: 1981749000}
-  - curiosityName: Trinkets
-    slotUI: {fileID: 1003546721}
-    itemCountText: {fileID: 2019895514}
-  - curiosityName: Ectoplasm
-    slotUI: {fileID: 153976886}
-    itemCountText: {fileID: 1662370537}
-  - curiosityName: Sword
-    slotUI: {fileID: 826165532}
-    itemCountText: {fileID: 268421341}
-  - curiosityName: BabyWyverns
-    slotUI: {fileID: 1366779055}
-    itemCountText: {fileID: 400077866}
-  - curiosityName: KelpieSkeletons
-    slotUI: {fileID: 348473159}
-    itemCountText: {fileID: 1205022908}
-  - curiosityName: HauntedMirror
-    slotUI: {fileID: 1517523799}
-    itemCountText: {fileID: 383954842}
-  - curiosityName: Excalibur
-    slotUI: {fileID: 1976881725}
-    itemCountText: {fileID: 949269800}
-  - curiosityName: StoneShard
-    slotUI: {fileID: 1531114464}
-    itemCountText: {fileID: 1084522027}
-  - curiosityName: BottledNightmare
-    slotUI: {fileID: 1541590500}
-    itemCountText: {fileID: 1509378136}
-  - curiosityName: BleedingLance
-    slotUI: {fileID: 1501057189}
-    itemCountText: {fileID: 24335814}
 --- !u!4 &374908736
 Transform:
   m_ObjectHideFlags: 0
@@ -4617,7 +4567,7 @@ GameObject:
   - component: {fileID: 928571037}
   - component: {fileID: 928571036}
   m_Layer: 5
-  m_Name: OpenCollectionBook
+  m_Name: openBookUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7837,7 +7787,7 @@ GameObject:
   - component: {fileID: 1472425476}
   - component: {fileID: 1472425475}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: completionMessage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9283,7 +9233,7 @@ GameObject:
   - component: {fileID: 1613176476}
   - component: {fileID: 1613176475}
   m_Layer: 5
-  m_Name: Close
+  m_Name: closeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9628,7 +9578,7 @@ GameObject:
   - component: {fileID: 1667629006}
   - component: {fileID: 1667629005}
   m_Layer: 5
-  m_Name: bookClosed
+  m_Name: closedBookUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

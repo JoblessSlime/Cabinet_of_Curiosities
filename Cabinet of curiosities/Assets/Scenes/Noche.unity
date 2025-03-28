@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 55852959}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 58991424}
   m_Layer: 5
   m_Name: Slot (3)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 83207879}
   m_Layer: 5
   m_Name: Image (3)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 109822506}
   m_Layer: 5
   m_Name: Slot (25)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 185401230}
   m_Layer: 5
   m_Name: Slot (16)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 217266388}
   m_Layer: 5
   m_Name: Slot (1)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1917,7 +1917,7 @@ GameObject:
   - component: {fileID: 311302719}
   m_Layer: 5
   m_Name: Slot (6)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1993,7 +1993,7 @@ GameObject:
   - component: {fileID: 340776578}
   m_Layer: 5
   m_Name: Image (7)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2069,7 +2069,7 @@ GameObject:
   - component: {fileID: 347946127}
   m_Layer: 5
   m_Name: Image (8)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2533,7 +2533,7 @@ GameObject:
   - component: {fileID: 547589892}
   m_Layer: 5
   m_Name: Slot (8)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2816,7 +2816,7 @@ GameObject:
   - component: {fileID: 636680009}
   m_Layer: 5
   m_Name: Image (9)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3164,7 +3164,7 @@ GameObject:
   - component: {fileID: 702295823}
   m_Layer: 5
   m_Name: Slot (4)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3315,7 +3315,7 @@ GameObject:
   - component: {fileID: 747847347}
   m_Layer: 5
   m_Name: Image (2)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3466,7 +3466,7 @@ GameObject:
   - component: {fileID: 780055647}
   m_Layer: 5
   m_Name: Image (12)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3542,7 +3542,7 @@ GameObject:
   - component: {fileID: 790405147}
   m_Layer: 5
   m_Name: Image (4)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3618,7 +3618,7 @@ GameObject:
   - component: {fileID: 793137636}
   m_Layer: 5
   m_Name: Image (14)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3905,7 +3905,7 @@ GameObject:
   - component: {fileID: 938440459}
   m_Layer: 5
   m_Name: Image (6)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3981,7 +3981,7 @@ GameObject:
   - component: {fileID: 949151052}
   m_Layer: 5
   m_Name: Slot (7)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4057,7 +4057,7 @@ GameObject:
   - component: {fileID: 1022908785}
   m_Layer: 5
   m_Name: Slot (23)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4269,7 +4269,7 @@ GameObject:
   - component: {fileID: 1133263195}
   m_Layer: 5
   m_Name: Image (5)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4345,7 +4345,7 @@ GameObject:
   - component: {fileID: 1204765299}
   m_Layer: 5
   m_Name: Slot (5)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4557,7 +4557,7 @@ GameObject:
   - component: {fileID: 1274765553}
   - component: {fileID: 1274765552}
   m_Layer: 5
-  m_Name: bookClosed
+  m_Name: closedBookUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4825,7 +4825,7 @@ GameObject:
   - component: {fileID: 1412857935}
   - component: {fileID: 1412857934}
   m_Layer: 5
-  m_Name: OpenCollectionBook (1)
+  m_Name: openBookUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4919,7 +4919,7 @@ GameObject:
   - component: {fileID: 1427854977}
   m_Layer: 5
   m_Name: Slot (2)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5070,7 +5070,7 @@ GameObject:
   - component: {fileID: 1545809488}
   m_Layer: 5
   m_Name: Slot (11)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6004,7 +6004,7 @@ GameObject:
   - component: {fileID: 1793895302}
   m_Layer: 5
   m_Name: Slot (9)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6079,7 +6079,7 @@ GameObject:
   - component: {fileID: 1807960229}
   - component: {fileID: 1807960230}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: completionMessage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6101,7 +6101,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244, y: -165.2}
+  m_AnchoredPosition: {x: -244, y: 199}
   m_SizeDelta: {x: 116.01, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1807960229
@@ -6281,7 +6281,7 @@ GameObject:
   - component: {fileID: 1920689752}
   m_Layer: 5
   m_Name: Slot (10)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6469,7 +6469,7 @@ GameObject:
   - component: {fileID: 1947892157}
   m_Layer: 5
   m_Name: Image (13)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6889,7 +6889,7 @@ GameObject:
   - component: {fileID: 1975647397}
   m_Layer: 5
   m_Name: Image (11)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6965,7 +6965,7 @@ GameObject:
   - component: {fileID: 1983685170}
   m_Layer: 5
   m_Name: Slot (24)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7041,7 +7041,7 @@ GameObject:
   - component: {fileID: 1998848563}
   m_Layer: 5
   m_Name: Image (1)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7133,56 +7133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9a5ab3d18250a409d8503d265ddf0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedBookUI: {fileID: 1274765550}
-  openBookUI: {fileID: 1412857932}
-  completionMessage: {fileID: 1807960230}
-  closeButton: {fileID: 2072910346}
-  curiositySlots:
-  - curiosityName: willOTheWisp
-    slotUI: {fileID: 217266386}
-    itemCountText: {fileID: 1123540180}
-  - curiosityName: boggart
-    slotUI: {fileID: 1427854975}
-    itemCountText: {fileID: 91846250}
-  - curiosityName: fairyWings
-    slotUI: {fileID: 58991422}
-    itemCountText: {fileID: 1319354924}
-  - curiosityName: LobHair
-    slotUI: {fileID: 949151050}
-    itemCountText: {fileID: 225968724}
-  - curiosityName: Pixies
-    slotUI: {fileID: 547589890}
-    itemCountText: {fileID: 261576992}
-  - curiosityName: Trinkets
-    slotUI: {fileID: 1793895300}
-    itemCountText: {fileID: 1568562340}
-  - curiosityName: Ectoplasm
-    slotUI: {fileID: 1920689750}
-    itemCountText: {fileID: 1768675794}
-  - curiosityName: Sword
-    slotUI: {fileID: 1545809486}
-    itemCountText: {fileID: 650619284}
-  - curiosityName: BabyWyverns
-    slotUI: {fileID: 702295821}
-    itemCountText: {fileID: 1219904779}
-  - curiosityName: KelpieSkeletons
-    slotUI: {fileID: 1204765297}
-    itemCountText: {fileID: 80521452}
-  - curiosityName: trinketScythe
-    slotUI: {fileID: 311302717}
-    itemCountText: {fileID: 1754626746}
-  - curiosityName: Excalibur
-    slotUI: {fileID: 185401228}
-    itemCountText: {fileID: 1958855693}
-  - curiosityName: StoneShard
-    slotUI: {fileID: 1022908783}
-    itemCountText: {fileID: 151967626}
-  - curiosityName: BottledNightmare
-    slotUI: {fileID: 1983685168}
-    itemCountText: {fileID: 220667020}
-  - curiosityName: BleedingLance
-    slotUI: {fileID: 109822504}
-    itemCountText: {fileID: 232708035}
 --- !u!4 &2069989002
 Transform:
   m_ObjectHideFlags: 0
@@ -7536,7 +7486,7 @@ GameObject:
   - component: {fileID: 2123528065}
   m_Layer: 5
   m_Name: Image (10)
-  m_TagString: Untagged
+  m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
