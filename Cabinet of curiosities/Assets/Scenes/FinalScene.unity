@@ -3041,7 +3041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &431962529
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5931,107 +5931,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843792480}
   m_CullTransparentMesh: 1
---- !u!1 &844089755
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 844089756}
-  - component: {fileID: 844089759}
-  - component: {fileID: 844089758}
-  - component: {fileID: 844089757}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &844089756
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844089755}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 845420775}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &844089757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844089755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &844089758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844089755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &844089759
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844089755}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &845420772
 GameObject:
   m_ObjectHideFlags: 0
@@ -6103,7 +6002,6 @@ RectTransform:
   - {fileID: 181918552}
   - {fileID: 1150500750}
   - {fileID: 1381864524}
-  - {fileID: 844089756}
   m_Father: {fileID: 295063794}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6285,6 +6183,48 @@ MonoBehaviour:
   - curiosityName: willOTheWisp
     slotUI: {fileID: 676481152}
     itemCountText: {fileID: 1955378735}
+  - curiosityName: boggart
+    slotUI: {fileID: 590285578}
+    itemCountText: {fileID: 2090078944}
+  - curiosityName: fairyWings
+    slotUI: {fileID: 13174235}
+    itemCountText: {fileID: 1911935542}
+  - curiosityName: lobHair
+    slotUI: {fileID: 908846757}
+    itemCountText: {fileID: 673922247}
+  - curiosityName: pixies
+    slotUI: {fileID: 860149120}
+    itemCountText: {fileID: 93548982}
+  - curiosityName: trinkets
+    slotUI: {fileID: 425391783}
+    itemCountText: {fileID: 1812680021}
+  - curiosityName: ectoplasm
+    slotUI: {fileID: 224591115}
+    itemCountText: {fileID: 1215806073}
+  - curiosityName: sword
+    slotUI: {fileID: 1353762787}
+    itemCountText: {fileID: 1587773038}
+  - curiosityName: babyWyvern
+    slotUI: {fileID: 1448821078}
+    itemCountText: {fileID: 988188534}
+  - curiosityName: kelpieSkeleton
+    slotUI: {fileID: 518390214}
+    itemCountText: {fileID: 2031270008}
+  - curiosityName: trinketScythe
+    slotUI: {fileID: 375835768}
+    itemCountText: {fileID: 402525609}
+  - curiosityName: excalibur
+    slotUI: {fileID: 1684826091}
+    itemCountText: {fileID: 1363810924}
+  - curiosityName: hilosopherStoneShard
+    slotUI: {fileID: 1327704652}
+    itemCountText: {fileID: 967935054}
+  - curiosityName: bottledNightmare
+    slotUI: {fileID: 829529273}
+    itemCountText: {fileID: 172987773}
+  - curiosityName: bleedingLance
+    slotUI: {fileID: 1540980498}
+    itemCountText: {fileID: 1450032392}
 --- !u!4 &859218899
 Transform:
   m_ObjectHideFlags: 0
@@ -10166,7 +10106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5f45dd48552afd1449cac93879bf0611, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
