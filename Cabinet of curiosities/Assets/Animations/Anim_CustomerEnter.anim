@@ -21,7 +21,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 2.5698621, y: 2.5698621, z: 2.5698621}
+        value: {x: 0.2214801, y: 0.2214801, z: 0.2214801}
         inSlope: {x: 0, y: 0, z: -112.6644}
         outSlope: {x: 0, y: 0, z: -112.6644}
         tangentMode: 0
@@ -30,7 +30,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.03675777}
       - serializedVersion: 3
         time: 1
-        value: {x: 4.591573, y: 4.591573, z: 4.591573}
+        value: {x: 0.32825, y: 0.32825, z: 0.32825}
         inSlope: {x: 0, y: 0, z: 0.38170093}
         outSlope: {x: 0, y: 0, z: 0.38170093}
         tangentMode: 0
@@ -87,7 +87,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 2.5698621
+        value: 0.2214801
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -96,7 +96,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 4.591573
+        value: 0.32825
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -117,7 +117,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 2.5698621
+        value: 0.2214801
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -126,7 +126,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 4.591573
+        value: 0.32825
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -147,7 +147,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 2.5698621
+        value: 0.2214801
         inSlope: -112.6644
         outSlope: -112.6644
         tangentMode: 0
@@ -156,7 +156,7 @@ AnimationClip:
         outWeight: 0.03675777
       - serializedVersion: 3
         time: 1
-        value: 4.591573
+        value: 0.32825
         inSlope: 0.38170093
         outSlope: 0.38170093
         tangentMode: 0

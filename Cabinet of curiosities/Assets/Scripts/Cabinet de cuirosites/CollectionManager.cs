@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CollectionManager : MonoBehaviour
 {
+    public static CollectionManager Instance;
+
     public Dictionary<string, int> inventory = new Dictionary<string, int>();
     public HashSet<string> collectionBook = new HashSet<string>();
     
@@ -25,6 +27,20 @@ public class CollectionManager : MonoBehaviour
     private Dictionary<string, CuriositySlot> curiositySlotMap = new Dictionary<string, CuriositySlot>();
     
     private int totalCollectibles;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
 
     void Start()
     {
