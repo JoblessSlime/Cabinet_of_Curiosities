@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 55852960}
   - component: {fileID: 55852959}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Image 1
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 83207880}
   - component: {fileID: 83207879}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Image 7
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1992,7 +1992,7 @@ GameObject:
   - component: {fileID: 340776579}
   - component: {fileID: 340776578}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: Image 11
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2068,7 +2068,7 @@ GameObject:
   - component: {fileID: 347946128}
   - component: {fileID: 347946127}
   m_Layer: 5
-  m_Name: Image (8)
+  m_Name: Image 4
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2815,7 +2815,7 @@ GameObject:
   - component: {fileID: 636680010}
   - component: {fileID: 636680009}
   m_Layer: 5
-  m_Name: Image (9)
+  m_Name: Image 5
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3314,7 +3314,7 @@ GameObject:
   - component: {fileID: 747847348}
   - component: {fileID: 747847347}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Image 3
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3465,7 +3465,7 @@ GameObject:
   - component: {fileID: 780055648}
   - component: {fileID: 780055647}
   m_Layer: 5
-  m_Name: Image (12)
+  m_Name: Image 24
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3541,7 +3541,7 @@ GameObject:
   - component: {fileID: 790405148}
   - component: {fileID: 790405147}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: Image 8
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3617,7 +3617,7 @@ GameObject:
   - component: {fileID: 793137637}
   - component: {fileID: 793137636}
   m_Layer: 5
-  m_Name: Image (14)
+  m_Name: Image 23
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3904,7 +3904,7 @@ GameObject:
   - component: {fileID: 938440460}
   - component: {fileID: 938440459}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: Image 10
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4268,7 +4268,7 @@ GameObject:
   - component: {fileID: 1133263196}
   - component: {fileID: 1133263195}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: Image 9
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6468,7 +6468,7 @@ GameObject:
   - component: {fileID: 1947892158}
   - component: {fileID: 1947892157}
   m_Layer: 5
-  m_Name: Image (13)
+  m_Name: Image 25
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6888,7 +6888,7 @@ GameObject:
   - component: {fileID: 1975647398}
   - component: {fileID: 1975647397}
   m_Layer: 5
-  m_Name: Image (11)
+  m_Name: Image 16
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7040,7 +7040,7 @@ GameObject:
   - component: {fileID: 1998848564}
   - component: {fileID: 1998848563}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Image 2
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7133,6 +7133,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9a5ab3d18250a409d8503d265ddf0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  closedBookUI: {fileID: 0}
+  openBookUI: {fileID: 0}
+  completionMessage: {fileID: 0}
+  closeButton: {fileID: 0}
+  curiositySlots:
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
 --- !u!4 &2069989002
 Transform:
   m_ObjectHideFlags: 0
@@ -7485,7 +7535,7 @@ GameObject:
   - component: {fileID: 2123528066}
   - component: {fileID: 2123528065}
   m_Layer: 5
-  m_Name: Image (10)
+  m_Name: Image 6
   m_TagString: CuriositySlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
