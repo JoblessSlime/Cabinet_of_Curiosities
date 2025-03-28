@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class ChangeCustomer : MonoBehaviour
 {
     public List<GameObject> list_Customers;
-    private List<GameObject> list_CustomersInGame;
+    private List<GameObject> list_CustomersInGame = new List<GameObject>();
 
     public GameObject gameObject_activeCustomer;
+    public int maxCustomers;
+    private int numberOfCustomers;
 
     public GameObject gameObject_ObjectToBuyParent;
     public GameObject gameObject_ObjectToBuy;
@@ -16,6 +18,9 @@ public class ChangeCustomer : MonoBehaviour
 
     public GameObject openCollection;
     public GameObject UI_Troc;
+
+    public GameObject shop;
+    public GameObject ui_shop;
 
     public TextMeshProUGUI TMP_BoxText;
     public TextMeshProUGUI TMP_BoxName;
@@ -26,17 +31,17 @@ public class ChangeCustomer : MonoBehaviour
     public LayerMask rare;
     public LayerMask epic;
 
+    public AudioSource SFX;
+
     private int price;
     private int paying;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        list_CustomersInGame = list_Customers;
-
-        for (int i = 0; i < list_Customers.Count; i++)
+        for (int i = 0;  i < list_Customers.Count; i++)
         {
-            list_Customers[i].SetActive(false);
+            list_CustomersInGame.Add(list_Customers[i]);
         }
 
         gameObject_activeCustomer = list_Customers[Random.Range(0, list_Customers.Count)];
@@ -47,7 +52,7 @@ public class ChangeCustomer : MonoBehaviour
 
     public void ChangeInterface(GameObject new_Customer)
     {
-        new_Customer.GetComponent<Animator>().Play("Anim_CustomerEnter");
+        new_Customer.GetComponent<Animator>().SetBool("Bool_CustomerLeaving", false);
 
         TMP_BoxText.text = new_Customer.GetComponent<Customer>().text;
         TMP_BoxName.text = new_Customer.GetComponent<Customer>().name;
@@ -61,8 +66,33 @@ public class ChangeCustomer : MonoBehaviour
     public void Change()
     {
         gameObject_activeCustomer.GetComponent<Animator>().SetBool("Bool_CustomerLeaving", true);
-
         list_CustomersInGame.Remove(gameObject_activeCustomer);
+        numberOfCustomers += 1;
+        if(numberOfCustomers >= maxCustomers)
+        {
+            // Change Activity
+            ui_shop.SetActive(false);
+            UI_Troc.SetActive(false);
+            openCollection.SetActive(false);
+            shop.SetActive(false);
+
+
+            numberOfCustomers = 0;
+            return;
+        }
+        else
+        {
+            if(list_CustomersInGame.Count <= 0)
+            {
+                Debug.Log("count < 0");
+                for (int i = 0; i < list_Customers.Count; i++)
+                {
+                    list_CustomersInGame.Add(list_Customers[i]);
+                }
+                Debug.Log(list_CustomersInGame.Count);
+            }
+        }
+
         gameObject_activeCustomer = list_CustomersInGame[Random.Range(0, list_CustomersInGame.Count)];
         gameObject_activeCustomer.SetActive(true);
 
@@ -71,6 +101,8 @@ public class ChangeCustomer : MonoBehaviour
 
     public void Buy()
     {
+        SFX.Play();
+
         if(paying >= price)
         {
             CollectionManager manager = FindObjectOfType<CollectionManager>();
@@ -87,6 +119,9 @@ public class ChangeCustomer : MonoBehaviour
                 Debug.LogError("CollectionManager not found in the scene!");
             }
 
+            UI_Troc.SetActive(false);
+            openCollection.SetActive(false);
+
             Change();
         }
 
@@ -94,6 +129,8 @@ public class ChangeCustomer : MonoBehaviour
 
     public void OpenBuyingPanel()
     {
+        SFX.Play();
+
         openCollection.SetActive(true);
         UI_Troc.SetActive(true);
 
@@ -120,6 +157,8 @@ public class ChangeCustomer : MonoBehaviour
 
     public void ClikedCommon(string itemName)
     {
+        SFX.Play();
+
         CollectionManager manager = FindObjectOfType<CollectionManager>();
         if (manager.inventory.ContainsKey(itemName))
         {
@@ -135,6 +174,8 @@ public class ChangeCustomer : MonoBehaviour
 
     public void ClikedUnCommon(string itemName)
     {
+        SFX.Play();
+
         CollectionManager manager = FindObjectOfType<CollectionManager>();
         if (manager.inventory.ContainsKey(itemName))
         {
@@ -149,6 +190,8 @@ public class ChangeCustomer : MonoBehaviour
 
     public void ClickedRare(string itemName)
     {
+        SFX.Play();
+
         CollectionManager manager = FindObjectOfType<CollectionManager>();
         if (manager.inventory.ContainsKey(itemName))
         {
