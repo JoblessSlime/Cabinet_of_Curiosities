@@ -14,8 +14,20 @@ public class ChangeCustomer : MonoBehaviour
     public GameObject gameObject_ObjectToBuy;
     public GameObject gameObject_CustomerObject;
 
+    public GameObject openCollection;
+    public GameObject UI_Troc;
+
     public TextMeshProUGUI TMP_BoxText;
     public TextMeshProUGUI TMP_BoxName;
+    public TextMeshProUGUI TMP_Paying;
+
+    public LayerMask common;
+    public LayerMask uncommon;
+    public LayerMask rare;
+    public LayerMask epic;
+
+    private int price;
+    private int paying;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,6 +54,7 @@ public class ChangeCustomer : MonoBehaviour
 
         gameObject_CustomerObject = new_Customer.GetComponent<Customer>().list_objectsToBuy[Random.Range(0, new_Customer.GetComponent<Customer>().list_objectsToBuy.Count)];
         gameObject_ObjectToBuy = Instantiate(gameObject_CustomerObject, gameObject_ObjectToBuyParent.transform);
+
         // sprite_ObjectToBuy = new_Customer.GetComponent<Customer>().objectToBuy.GetComponent<Sprite>();
     }
 
@@ -58,20 +71,95 @@ public class ChangeCustomer : MonoBehaviour
 
     public void Buy()
     {
-        CollectionManager manager = FindObjectOfType<CollectionManager>();
-        if (manager != null)
+        if(paying >= price)
         {
-            // payer
+            CollectionManager manager = FindObjectOfType<CollectionManager>();
+            if (manager != null)
+            {
+                // payer
+                paying = 0;
 
-            Debug.Log($"Collecting {gameObject_ObjectToBuy.tag}");
-            manager.CollectItem(gameObject_ObjectToBuy.tag);
-        }
-        else
-        {
-            Debug.LogError("CollectionManager not found in the scene!");
-        }
+                Debug.Log($"Collecting {gameObject_ObjectToBuy.tag}");
+                manager.CollectItem(gameObject_ObjectToBuy.tag);
+            }
+            else
+            {
+                Debug.LogError("CollectionManager not found in the scene!");
+            }
 
-        Change();
+            Change();
+        }
 
     }
+
+    public void OpenBuyingPanel()
+    {
+        openCollection.SetActive(true);
+        UI_Troc.SetActive(true);
+
+        // gameObject_CustomerObject.GetComponent<LayerMask>() == uncommon
+
+        if ((uncommon & (1 << gameObject_CustomerObject.layer)) != 0)
+        {
+            UI_Troc.transform.GetChild(0).gameObject.SetActive(true);
+            price = 5;
+        }
+        else if ((rare & (1 << gameObject_CustomerObject.layer)) != 0)
+        {
+            UI_Troc.transform.GetChild(1).gameObject.SetActive(true);
+            price = 10;
+        }
+        else if ((epic & (1 << gameObject_CustomerObject.layer)) != 0)
+        {
+            UI_Troc.transform.GetChild(2).gameObject.SetActive(true);
+            price = 15;
+        }
+
+        TMP_Paying.text = paying.ToString() + " / " + price.ToString();
+    }
+
+    public void ClikedCommon(string itemName)
+    {
+        CollectionManager manager = FindObjectOfType<CollectionManager>();
+        if (manager.inventory.ContainsKey(itemName))
+        {
+            if (manager.inventory[itemName] >= 1)
+            {
+                manager.inventory[itemName] -= 1;
+                paying += 1;
+            }
+        }
+
+        TMP_Paying.text = paying.ToString() + " / " + price.ToString();
+    }
+
+    public void ClikedUnCommon(string itemName)
+    {
+        CollectionManager manager = FindObjectOfType<CollectionManager>();
+        if (manager.inventory.ContainsKey(itemName))
+        {
+            if (manager.inventory[itemName] >= 1)
+            {
+                manager.inventory[itemName] -= 1;
+                paying += 5;
+            }
+        }
+        TMP_Paying.text = paying.ToString() + " / " + price.ToString();
+    }
+
+    public void ClickedRare(string itemName)
+    {
+        CollectionManager manager = FindObjectOfType<CollectionManager>();
+        if (manager.inventory.ContainsKey(itemName))
+        {
+            if (manager.inventory[itemName] >= 1)
+            {
+                manager.inventory[itemName] -= 1;
+                paying += 10;
+            }
+        }
+        TMP_Paying.text = paying.ToString() + " / " + price.ToString();
+    }
+
+
 }
