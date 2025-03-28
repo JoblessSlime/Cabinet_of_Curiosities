@@ -2108,11 +2108,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9a5ab3d18250a409d8503d265ddf0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedBookUI: {fileID: 0}
-  openBookUI: {fileID: 0}
-  completionMessage: {fileID: 0}
-  closeButton: {fileID: 0}
-  curiositySlots: []
+  closedBookUI: {fileID: 1667629003}
+  openBookUI: {fileID: 928571034}
+  completionMessage: {fileID: 1472425475}
+  closeButton: {fileID: 1613176475}
+  curiositySlots:
+  - curiosityName: 
+    slotUI: {fileID: 0}
+    itemCountText: {fileID: 0}
 --- !u!4 &374908736
 Transform:
   m_ObjectHideFlags: 0
@@ -3265,6 +3268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Noche
+  book: {fileID: 0}
 --- !u!1 &557190276
 GameObject:
   m_ObjectHideFlags: 0

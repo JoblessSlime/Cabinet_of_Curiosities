@@ -22,6 +22,7 @@ TagManager:
   - trinketScythe
   - hauntedMirror
   - CuriositySlot
+  - Manager
   layers:
   - Default
   - TransparentFX

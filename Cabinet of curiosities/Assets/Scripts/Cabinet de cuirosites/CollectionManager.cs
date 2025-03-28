@@ -48,6 +48,20 @@ public class CollectionManager : MonoBehaviour
         {
             closeButton.onClick.AddListener(CloseCollectionBook);
         }
+
+        // Save Datas
+        GameObject[] otherGameManager = GameObject.FindGameObjectsWithTag("Manager");
+        for (int i = 0; i < otherGameManager.Length; i++)
+        {
+            if (otherGameManager[i] != this.gameObject)
+            {
+                inventory = otherGameManager[i].GetComponent<CollectionManager>().inventory;
+                foreach (KeyValuePair<string, int> pair in inventory)
+                {
+                    UpdateItemCountText(pair.Key);
+                }
+            }
+        }
     }
 
     public void CollectItem(string itemName)
