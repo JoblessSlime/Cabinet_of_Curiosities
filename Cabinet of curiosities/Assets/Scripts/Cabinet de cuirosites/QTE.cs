@@ -24,7 +24,7 @@ public class FishingQTE : MonoBehaviour
     private bool movingRight = true;
     private bool canClick = false;
     private int successCount = 0;
-    private int maxSuccesses = 30;
+    private int maxSuccesses = 15;
 
     private CollectionManager collectionManager;
 

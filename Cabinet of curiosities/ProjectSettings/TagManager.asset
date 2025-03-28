@@ -14,12 +14,12 @@ TagManager:
   - sword
   - babyWyvern
   - kelpieSkeleton
-  - hauntedMirror
   - excalibur
   - philosopherStoneShard
   - bottledNightmare
   - bleedingLance
   - trash
+  - trinketScythe
   layers:
   - Default
   - TransparentFX
